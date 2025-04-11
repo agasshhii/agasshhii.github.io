@@ -1,0 +1,162 @@
+body {
+    background-color: #000; 
+    color: #fff; 
+}
+
+.navbar {
+    background-color: #333; 
+}
+.navbar a {
+    color: #fff; 
+    transition: color 0.3s ease; 
+}
+.navbar a:hover {
+    color: #ffcc00; 
+}
+
+
+.card {
+    background-color: #222; 
+    border: none;
+}
+.card-title, .card-text {
+    color: #fff;
+}
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+button, .btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.05);
+    background-color: #ffffff2c;
+}
+footer {
+    background-color: #111; 
+    color: #fff; 
+}
+body, 
+.navbar, 
+.card, 
+footer {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.navbar a, 
+.navbar-light .navbar-brand, 
+.navbar-light .navbar-nav .nav-link {
+    transition: color 0.5s ease;
+}
+
+
+body.light {
+    background-color: #e29595 !important; 
+    color: #000 !important; 
+}
+
+.navbar.light {
+    background-color: #dab0b0 !important; 
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: #880909 !important; 
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #f86f6fad !important; 
+}
+
+.card.light {
+    background-color: rgb(100, 19, 19);
+    color: black;
+}
+
+footer.light {
+    background-color: #e28686 !important; 
+    color: #000 !important;
+}
+
+.star {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+    margin-right: 3px;
+    transition: color 0.3s ease;
+}
+.star:hover {
+    color: gold; 
+    transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+.star.selected {
+    color: gold; 
+    transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.rating-message {
+    font-size: 1.1rem; 
+    margin-top: 5px; 
+    color: #28a745; 
+}
+
+#random-fact, #current-time {
+    font-size: 1.2rem; 
+    color: #f8f9fa;
+}
+
+.nav-link.active {
+    background-color: #ff55552a; 
+    color: white; 
+    border-radius: 5px; 
+}
+
+.gif-container {
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; 
+}
+.gif-container.show {
+    opacity: 1; 
+}
+
+.card.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.modal-content {
+    background-color: #333;
+    color: #fff;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.fade-in {
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: opacity 0.8s ease, transform 0.8s ease; 
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0); 
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+        <a class="navbar-brand text-danger" href="#">Haruki Murakami</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="books.html">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="quotes.html">Quotes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="works.html">Short Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="opinion.html">Share your opinion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-danger" href="scan_me.html">Scan me!</a>
+                </li>
+            </ul>
+            <button id="theme-toggle" class="btn btn-outline-danger ms-auto">Light theme</button>
+        </div>
+    </div>
+</nav>
+
+
+  <div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div class="carousel-inner fade-in">
+      <div class="carousel-item active">
+        <img src="pictures and gifs/result_haruki 3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="pictures and gifs/result_Haruki Murakami (2).jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="pictures and gifs/result_Haruki's room.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container mt-5 ">
+    <div class="row">
+      <div class="col-lg-6 fade-in">
+        <h2>Welcome to the Website</h2>
+        <p>A website dedicated to Haruki Murakami</p>
+        <div class="col-lg-6 fade-in">
+          <h2>Books by Haruki Murakami</h2>
+          <ul id="book-list" class="mt-2"></ul>
+      </div>      
+        <button id="show-time" class="btn btn-outline-danger mt-3 fade-in">What time is it?</button>
+        <p id="current-time" class="mt-2 fade-in"></p>
+        <p id="greeting" class="mt-2 fade-in"></p>
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <div id="weatherResult"></div>
+      </div>
+      <div class="col-lg-6 fade-in">
+        <h2>Goals of оur Website</h2>
+        <p>This website is dedicated to exploring the works of Haruki Murakami. Here, you will find information about his books, analyses of key themes and symbols, as well as discussions and reviews. Our goal is to create a community of literature lovers where thoughts and ideas about his works can be shared, inspiring each other with their depth and beauty.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mt-5 text-center bg-black text-light py-3 fade-in">
+    <p>Developed by: Kumarbekova Aida, TLeuberdikyzy Samal</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lava/tema.js"></script>
+  <script src="lava/navigation.js"></script>
+  <script src="lava/HELLO WORLD.js"></script> 
+  <script src="lava/alippe.js"></script>
+  <script src="lava/scrolling.js"></script>
+</body>
+</html>

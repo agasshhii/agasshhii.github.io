@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Works</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+        <a class="navbar-brand text-danger" href="#">Haruki Murakami</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="books.html">Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="quotes.html">Quotes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="works.html">Short Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="opinion.html">Share your opinion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-danger" href="scan_me.html">Scan me!</a>
+                </li>
+            </ul>
+            <button id="theme-toggle" class="btn btn-outline-danger ms-auto">Light theme</button>
+        </div>
+    </div>
+</nav>
+
+
+  <div class="container mt-5 fade-in">
+    <h2>Our Recent Works</h2>
+    <div class="row">
+      <div class="col-lg-4 fade-in">
+        <div class="card">
+          <img src="pictures and gifs/with beatles.jpg" class="card-img-top" alt="Work 1">
+          <div class="card-body">
+            <h5 class="card-title">With The Beatles</h5>
+            <p class="card-text">The author recalls a beautiful girl from his high school clutching the Beatles album "With The Beatles" as she walked down the hallway...</p>
+            <div class="rating" data-book="1">
+              <span class="star" data-value="1">★</span>
+              <span class="star" data-value="2">★</span>
+              <span class="star" data-value="3">★</span>
+              <span class="star" data-value="4">★</span>
+              <span class="star" data-value="5">★</span>
+            </div>
+            <div id="rating-message-1" class="rating-message mt-3"></div>
+            <a href="pdfs/shorts storiesss/pdfcoffee.com_murakami-haruki-samsa-in-love-new-yorker-28-oct-2013-pdf-free.pdf" download class="btn btn-primary">Download PDF</a>
+            <button onclick="playMusic(1)" class="btn btn-outline-success mt-3">Test for the fans of beatles</button>
+            <button onclick="pauseMusic(1)" class="btn btn-outline-danger mt-3">Stop</button>
+            <div id="gif-container-1" class="gif-container mt-3"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 fade-in">
+        <div class="card">
+          <img src="pictures and gifs/samsa.png" class="card-img-top" alt="Work 2">
+          <div class="card-body">
+            <h5 class="card-title">Samsa in Love</h5>
+            <p class="card-text">“Samsa in Love” is one of Haruki Murakami's more recently published stories in The New Yorker in 2013...</p>
+            <div class="rating" data-book="2">
+              <span class="star" data-value="1">★</span>
+              <span class="star" data-value="2">★</span>
+              <span class="star" data-value="3">★</span>
+              <span class="star" data-value="4">★</span>
+              <span class="star" data-value="5">★</span>
+            </div>
+            <div id="rating-message-2" class="rating-message mt-3"></div>
+            <a href="pdfs/shorts storiesss/pdfcoffee.com_murakami-haruki-samsa-in-love-new-yorker-28-oct-2013-pdf-free.pdf" download class="btn btn-primary">Download PDF</a>
+            <button onclick="playMusic(2)" class="btn btn-outline-success mt-3">If you wanna just relaxxx</button>
+            <button onclick="pauseMusic(2)" class="btn btn-outline-danger mt-3">Stop</button>
+            <div id="gif-container-2" class="gif-container mt-3"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 fade-in">
+        <div class="card">
+          <img src="pictures and gifs/kino.png" class="card-img-top" alt="Work 3">
+          <div class="card-body">
+            <h5 class="card-title">Kino</h5>
+            <p class="card-text">Kino is a middle-aged man who discovers his wife's infidelity...</p>
+            <div class="rating" data-book="3">
+              <span class="star" data-value="1">★</span>
+              <span class="star" data-value="2">★</span>
+              <span class="star" data-value="3">★</span>
+              <span class="star" data-value="4">★</span>
+              <span class="star" data-value="5">★</span>
+            </div>
+            <div id="rating-message-3" class="rating-message mt-3"></div>
+            <a href="pdfs/shorts storiesss/Murakami - Kino - The New Yorker.pdf" download class="btn btn-primary">Download PDF</a>
+            <button onclick="playMusic(3)" class="btn btn-outline-success mt-3">Let's remember the old days!</button>
+            <button onclick="pauseMusic(3)" class="btn btn-outline-danger mt-3">Stop</button>
+            <div id="gif-container-3" class="gif-container mt-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mt-5 text-center fade-in">
+    <p>Developed by: Kumarbekova Aida, Tleuberdikyzy Samal</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lava/stars.js"></script>
+  <script src="lava/tema.js"></script>
+  <script src="lava/navigation.js"></script>
+  <script src="lava/music.js"></script>
+  <script src="lava/scrolling.js"></script>
+</body>
+</html>
